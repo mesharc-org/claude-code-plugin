@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mesharc": {
+      "type": "http",
+      "url": "https://mcp.mesharc.dev/mcp"
+    }
+  }
+}

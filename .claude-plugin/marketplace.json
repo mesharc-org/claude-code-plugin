@@ -1,0 +1,15 @@
+{
+  "name": "mesharc",
+  "description": "The official MeshArc plugin for Claude Code: the hosted MeshArc web crawler MCP server and a skill for using it.",
+  "owner": {
+    "name": "MeshArc",
+    "email": "hello@mesharc.dev"
+  },
+  "plugins": [
+    {
+      "name": "mesharc",
+      "source": "./",
+      "description": "MeshArc web crawler: search, scrape, map and crawl sites, and see what changed between crawls."
+    }
+  ]
+}

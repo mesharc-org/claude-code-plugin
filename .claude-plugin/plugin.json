@@ -1,0 +1,14 @@
+{
+  "name": "mesharc",
+  "version": "0.1.0",
+  "description": "MeshArc web crawler: search the web, scrape pages to clean markdown, map and crawl sites past bot walls, and see what changed between crawls. Uses the hosted MeshArc MCP server; sign in once, no key to copy.",
+  "author": {
+    "name": "MeshArc",
+    "email": "hello@mesharc.dev",
+    "url": "https://mesharc.dev"
+  },
+  "homepage": "https://mesharc.dev/mcp",
+  "repository": "https://github.com/mesharc-org/claude-code-plugin",
+  "license": "MIT",
+  "keywords": ["web-scraping", "web-crawler", "markdown", "search", "change-detection", "website-monitoring", "mcp"]
+}
