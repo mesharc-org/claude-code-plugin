@@ -1,4 +1,5 @@
 ---
+name: mesharc-web
 description: Read, search and crawl the live web with the MeshArc tools. Use when the user wants a web page's content, a web search with the pages read, a site's URLs or sections, a crawl of a site or section, a site watched on a schedule, or what changed on a site since the last crawl.
 ---
 
