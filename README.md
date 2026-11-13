@@ -24,7 +24,7 @@ claude plugin install mesharc@mesharc
 
 ## What you get
 
-- **The `mesharc` MCP server**, with 15 tools: `search_web`, `scrape_urls`, `map_site`, `crawl_site`, `list_projects`, `get_project`, `create_project`, `update_project`, `delete_project`, `start_run`, `list_runs`, `list_pages`, `get_changes`, `get_job` and `cancel_job`.
+- **The `mesharc` MCP server**, with 21 tools: `search_web`, `scrape_urls`, `map_site`, `crawl_site`, `list_projects`, `get_project`, `create_project`, `update_project`, `delete_project`, `start_run`, `list_runs`, `list_pages`, `get_changes`, `run_agent`, `continue_agent`, `create_monitor`, `list_monitors`, `pause_monitor`, `get_monitor_rows`, `get_job` and `cancel_job`.
 - **A skill, `mesharc-web`**, that tells Claude which tool fits which request and how to avoid spending credits it does not need to.
 
 Try asking:
@@ -32,6 +32,8 @@ Try asking:
 - "Read https://example.com/pricing and summarise the plans."
 - "Map the sitemap of stripe.com and list its sections."
 - "Crawl only the blog of hotspotseo.com, weekly, and tell me what changed since last week."
+- "Find the monthly price of each plan on three competitors' pricing pages, with sources."
+- "Search the news for our brand every morning and tell me what is new."
 
 ## Pricing
 
