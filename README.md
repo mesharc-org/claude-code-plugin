@@ -24,7 +24,7 @@ claude plugin install mesharc@mesharc
 
 ## What you get
 
-- **The `mesharc` MCP server**, with 21 tools: `search_web`, `scrape_urls`, `map_site`, `crawl_site`, `list_projects`, `get_project`, `create_project`, `update_project`, `delete_project`, `start_run`, `list_runs`, `list_pages`, `get_changes`, `run_agent`, `continue_agent`, `create_monitor`, `list_monitors`, `pause_monitor`, `get_monitor_rows`, `get_job` and `cancel_job`.
+- **The `mesharc` MCP server**, with 23 tools: `search_web`, `scrape_urls`, `screenshot_url`, `map_site`, `crawl_site`, `list_projects`, `get_project`, `create_project`, `update_project`, `delete_project`, `archive_project`, `start_run`, `list_runs`, `list_pages`, `get_changes`, `run_agent`, `continue_agent`, `create_monitor`, `list_monitors`, `pause_monitor`, `get_monitor_rows`, `get_job` and `cancel_job`.
 - **A skill, `mesharc-web`**, that tells Claude which tool fits which request and how to avoid spending credits it does not need to.
 
 Try asking:
