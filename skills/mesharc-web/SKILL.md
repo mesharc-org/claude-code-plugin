@@ -1,22 +1,25 @@
 ---
+name: mesharc-web
 description: Read, search and crawl the live web with the MeshArc tools. Use when the user wants a web page's content, a web search with the pages read, a site's URLs or sections, a crawl of a site or section, a site watched on a schedule, what changed on a site since the last crawl, a research question answered from several pages, or a search or question kept on a schedule.
 ---
 
 # Working with the web through MeshArc
 
 
-The `mesharc` MCP server gives you 21 tools. Pick the smallest one that answers the question.
+The `mesharc` MCP server gives you 23 tools. Pick the smallest one that answers the question.
 
 | The user wants | Use |
 |---|---|
 | Results for a query, optionally with each page read | `search_web` |
 | The content of one or more known URLs (up to 500) | `scrape_urls` |
+| What a page looks like (its layout, a chart, a banner), as a picture | `screenshot_url` |
 | Every URL a site lists in its sitemaps, without fetching pages | `map_site` |
 | One crawl of a site or a section | `crawl_site` |
 | A site watched over time | `create_project`, then `start_run` |
 | What changed since the last crawl | `get_changes` |
 | Watched projects, their runs and pages | `list_projects`, `get_project`, `list_runs`, `list_pages` |
 | Change a project's name, schedule or settings | `update_project` |
+| Stop a project and remove it | `archive_project` (deleted after 30 days unless restored in the app) |
 | A question that needs several pages or sites to answer | `run_agent` (carry on a run that hit its credit limit with `continue_agent`) |
 | A search or a question kept on a schedule, reporting what changed | `create_monitor`; then `list_monitors`, `get_monitor_rows`, `pause_monitor` |
 | Follow or stop something that came back as a job | `get_job`, `cancel_job` |
@@ -29,7 +32,7 @@ The `mesharc` MCP server gives you 21 tools. Pick the smallest one that answers 
 - A long crawl, run, batch or search can come back as a job. Follow it with `get_job` rather than starting it again.
 - Reach for `run_agent` only when the answer needs several pages or sites: when you know what to fetch, `search_web` and `scrape_urls` are quicker and cheaper. An agent run always comes back as a job; check it with `get_job` every 30 to 60 seconds. `max_credits` caps the whole run (it pays the model's tokens as well as the pages); a cap under about 50 can stop a run before its first step, so for a small question use around 100.
 - To watch a whole site's pages use a project; to keep watching a search or a question (mentions, rankings, prices) use `create_monitor`.
-- `delete_project` works only on a local server with an admin key. On the hosted server, tell the user to delete the project in the MeshArc app.
+- `delete_project` works only on a local server with an admin key. On the hosted server, use `archive_project`: the project stops running, and is deleted after 30 days unless the user restores it in the MeshArc app. Both ask for the project's name repeated back.
 
 ## Signing in
 
